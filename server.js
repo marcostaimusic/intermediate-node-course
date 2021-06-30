@@ -58,3 +58,19 @@ app.route('/users/:id')
     (err,data)=>{sendResponse(res,err,data)}
   )
 })
+
+
+// per continuare con il tutorial e approfondire:
+
+// Encrypt your user passwords with a library like "bcrypt" before saving them.
+// https://www.npmjs.com/package/bcrypt
+
+// Add a nested collection (activities, pets, blog posts, etc... ) to your User model using the "populate" method.
+// https://mongoosejs.com/docs/populate.html
+
+// Use a library like JSON web token to authenticate your users in a login route.
+// https://www.npmjs.com/package/jsonwebtoken
+
+// Use middleware for your mongoose model or express routes to check if there is a valid token that matches the user's id before saving data.
+// https://mongoosejs.com/docs/populate.html
+// https://expressjs.com/en/guide/using-middleware.html
